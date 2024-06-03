@@ -33,8 +33,8 @@ def get_torrents_by_category(category):
         exit()
 
 def export_torrent_files(torrents):
-    if not os.path.exists(TORRENTS_DIR):
-        os.makedirs(TORRENTS_DIR)
+    if not os.path.exists(EXPORT_DIR):
+        os.makedirs(EXPORT_DIR)
 
     for torrent in torrents:
         torrent_hash = torrent['hash']
